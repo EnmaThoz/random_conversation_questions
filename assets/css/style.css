@@ -66,3 +66,74 @@ button:hover {
 .random-btn:hover {
     background: #219a52;
 }
+  /* Estilos anteriores... */
+
+  .copy-btn {
+    background: #9b59b6;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.copy-btn:hover {
+    background: #8e44ad;
+}
+
+.copied {
+    background: #2ecc71 !important;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    .input-section {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #resultado {
+        padding: 12px;
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+
+    .add-section {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+
+    #nuevaPregunta {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 8px;
+    }
+
+    .copy-btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+}
