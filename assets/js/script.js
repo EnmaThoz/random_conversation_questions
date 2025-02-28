@@ -156,7 +156,24 @@
             resultado.style.color = "#e74c3c";
         }
     }
+    function copiarPregunta() {
+        const resultado = document.getElementById('resultado');
+        const texto = resultado.innerText; // Obtener el texto sin HTML
+        const btnCopiar = document.getElementById('btnCopiar');
 
+        navigator.clipboard.writeText(texto)
+            .then(() => {
+                btnCopiar.classList.add('copied');
+                btnCopiar.textContent = "✅ ¡Copiada!";
+                setTimeout(() => {
+                    btnCopiar.classList.remove('copied');
+                    btnCopiar.textContent = "📋 Copiar pregunta";
+                }, 2000); // Resetear después de 2 segundos
+            })
+            .catch(() => {
+                alert("No se pudo copiar. Intenta manualmente.");
+            });
+    }
     function preguntaAleatoria() {
         const numeroRandom = Math.floor(Math.random() * 100) + 1;
         document.getElementById('numero').value = numeroRandom;
