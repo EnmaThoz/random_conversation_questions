@@ -346,7 +346,7 @@
             });
     }
     function preguntaAleatoria() {
-        const numeroRandom = Math.floor(Math.random() * 100) + 1;
+        const numeroRandom = Math.floor(Math.random() * 245) + 1;
         document.getElementById('numero').value = numeroRandom;
         mostrarPregunta();
     }
